@@ -26,12 +26,13 @@
 
             alert("Here is a scrambled word: " + scrambledWord)
             var userGuess = prompt("Guess the word!");
+            userGuess = userGuess.trim();
+            userGuess = userGuess.toLowerCase();
 
             if (userGuess != randomWord) {
-                alert("Your guess is incorrect.")
+                alert("Your guess is incorrect.");
             } else {
-                alert("You guessed correctly!")
-
+                alert("You guessed correctly!");
             }
 
             playing = confirm("Press OK To keep playing or Cancel to quit");
